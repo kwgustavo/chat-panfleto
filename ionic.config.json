@@ -1,0 +1,8 @@
+{
+  "name": "panfleto",
+  "app_id": "df5f415a",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
