@@ -17,7 +17,27 @@
 
   <!-- cordova.js required for cordova apps (remove if not needed) -->
   <script src="cordova.js"></script>
+  <script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
 
+  <style>
+    #intergramRoot {
+      display: none;
+    }
+  </style>
+  <script> 
+      window.intergramId = "132368716";
+      window.intergramCustomizations = {
+          titleClosed: 'Chat Fechado',
+          titleOpen: 'Chat Aberto',
+          introMessage: 'Primeira mensagem ao entrar.',
+          autoResponse: 'Uma mensagem que é enviada imediatamente após o usuário enviar sua primeira mensagem',
+          autoNoResponse: 'Uma mensagem que é enviada imediatamente após o usuário enviar sua primeira mensagem ' + 'e nenhuma resposta foi recebida',
+          mainColor: "#E91E63", // Can be any css supported color 'red', 'rgb(255,87,34)', etc
+          alwaysUseFloatingButton: true // Use the mobile floating button also on large screens
+      
+        };
+      
+  </script>
   <!-- un-comment this code to enable service worker
   <script>
     if ('serviceWorker' in navigator) {
