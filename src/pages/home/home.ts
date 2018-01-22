@@ -8,6 +8,7 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
 
   
+  chat:Element= null;
 
   constructor(public navCtrl: NavController) {
     
@@ -15,17 +16,23 @@ export class HomePage {
 
 
   some():void {
-    document.getElementById("intergramRoot").setAttribute("style","display:none")
+    document.getElementById("intergramRoot").setAttribute("style","display:none");
+
   }
 
   aparece(): void {
     window.setTimeout(()=> {
       document.getElementById("intergramRoot").setAttribute("style","display:block !important");            
       if(document.getElementById("intergramRoot").style.display==="none"){ 
-        document.getElementById("intergramRoot").children[0].children[0].click();
+        this.chat = document.getElementById("intergramRoot").children[0].children[0];
+        
       }
     },'200');
 
 
+  }
+
+  abreChat():void {
+    console.log("abre chart")
   }
 }

@@ -1,19 +1,29 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
 
 <script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
 
-<ion-content padding>
-    <button ion-button round block (click)="aparece()">Aparece Chat</button>
-    <button ion-button round block (click)="some()">SOME Chat</button>
-    The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content scroll="false" padding>
+    
+  <ion-grid class="fundo" >
+    <ion-row class="setor">
+      <ion-col>
+        <button ion-button round (click) ="abreChat()">Abre Chat</button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="setor">
+      <ion-col>
+        <button ion-button round block (click)="aparece()">Aparece Chat</button>
+      </ion-col>
+      <ion-col>
+          <button ion-button round block (click)="some()">SOME Chat</button>
+        </ion-col>
+    </ion-row>
+    <ion-row class="setor">
+      <ion-col>
+          <button ion-button round block (click)="some()"> Outro Botao</button>
+
+      </ion-col>
+    </ion-row>
+
+    </ion-grid>
 </ion-content>

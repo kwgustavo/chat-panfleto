@@ -1,3 +1,36 @@
 page-home {
 
+    body, html {
+        height: 100%;
+    }
+    
+    .bg { 
+        /* The image used */
+        background-image: url("OPA.png");
+    
+        /* Full height */
+        height: 100%; 
+    
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .setor{
+        height: 10% !important;
+        background-color: red;
+        opacity: 0.3;
+        border-bottom: 1px solid black !important;
+    }
+
+
+    .fundo {
+        background: url("../assets/imgs/template1.png")   !important;
+        background-repeat: no-repeat !important;
+        background-attachment: scroll !important;
+        background-size: 100% !important;
+        height: 400%;
+    }
+    
+    
 }
