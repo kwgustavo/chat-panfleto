@@ -1,134 +1,15 @@
 page-home {
 
-    body, html {
-        height: 100%;
-    }
-    
-    .bg { 
-        /* The image used */
-        background-image: url("OPA.png");
-    
-        /* Full height */
-        height: 100%; 
-    
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    .box-produtos {
+        background-repeat: no-repeat; background-position: center; height: 320px;
+    }   
+
+    .box-produtos-button {
+        position: relative; margin:0 auto; text-align: center; width: 175px; height: 320px;
     }
 
-    .fundo {
-        background: url("../assets/imgs/template1.png")   !important;
-        background-repeat: no-repeat !important;
-        background-attachment: scroll !important;
-        background-size: 100% !important;
-        height: 400%;
+    .box-produtos-comprar {
+        width: 175px; height: 35px; margin:0 auto; background: red; position: absolute; bottom: 5px; cursor: pointer;
     }
-
-
-
-    //Media queries
-    /* ----------- iPhone 4 and 4S ----------- */
-
-
-/* Portrait */
-@media only screen 
-and (min-device-width: 320px) 
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
-}
-
-
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-
-/* Portrait */
-@media screen 
-and (min-device-width: 320px) 
-and (max-device-width: 568px) {
-    body {
-        background-color:black;
-        color:white
-        }
-    .setor{
-        height: 300px !important;
-        background-color: red;
-        opacity: 0.3;
-        border-bottom: 1px solid black !important;
-    }
-    div.setor {
-
-    }
-
-}
-
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-
-/* Portrait */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) { 
-
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-
-
-/* Portrait */
-@media only screen 
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait) { 
-
-}
-
-
-/* ----------- iPhone X ----------- */
-
-
-/* Portrait */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 812px) 
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait) { 
-
-}
-
-    
-
-/* ----------- Galaxy S4, S5 and Note 3 ----------- */
-
-
-
-/* Portrait */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: portrait) {
-
-
-}
-
-
-/* ----------- Galaxy S6 ----------- */
-
-
-/* Portrait */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) 
-  and (orientation: portrait) {
-
-}
-
     
 }
