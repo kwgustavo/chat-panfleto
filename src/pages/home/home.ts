@@ -33,6 +33,6 @@ export class HomePage {
   }
 
   abreChat():void {
-    console.log("abre chart")
+    console.log("abre chart");
   }
 }
