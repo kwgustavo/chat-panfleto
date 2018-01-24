@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <title>Ionic App</title>
@@ -17,39 +18,37 @@
 
   <!-- cordova.js required for cordova apps (remove if not needed) -->
   <script src="cordova.js"></script>
-  <script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
 
-  <style>
-    #intergramRoot {
-      display: none;
-    }
-  </style>
   <script> 
-      window.intergramId = "132368716";
-      window.intergramCustomizations = {
-          titleClosed: 'Chat Fechado',
-          titleOpen: 'Chat Aberto',
-          introMessage: 'Primeira mensagem ao entrar.',
-          autoResponse: 'Uma mensagem que é enviada imediatamente após o usuário enviar sua primeira mensagem',
-          autoNoResponse: 'Uma mensagem que é enviada imediatamente após o usuário enviar sua primeira mensagem ' + 'e nenhuma resposta foi recebida',
-          mainColor: "#E91E63", // Can be any css supported color 'red', 'rgb(255,87,34)', etc
-          alwaysUseFloatingButton: true // Use the mobile floating button also on large screens
-      
-        };
-      
+    //Maracutais
+    window.intergramId = "132368716";
+    window.intergramCustomizations = {
+      titleClosed: 'Chat Fechado',
+      titleOpen: 'Chat Aberto',
+      introMessage: 'Primeira mensagem ao entrar.',
+      autoResponse: 'Uma mensagem que é enviada imediatamente após o usuário enviar sua primeira mensagem',
+      autoNoResponse: 'Uma mensagem que é enviada imediatamente após o usuário enviar sua primeira mensagem ' + 'e nenhuma resposta foi recebida',
+      mainColor: "#E91E63", // Can be any css supported color 'red', 'rgb(255,87,34)', etc
+      alwaysUseFloatingButton: true // Use the mobile floating button also on large screens
+
+    };
+
+    $(document).ready(() => {
+      $(".butaoArazao").click(function () {
+        console.log("index");
+        let c = $("#intergramRoot > div > div:nth-child(2) > iframe").on('load', function () {
+          console.log(jQuery(this));
+//          jQuery(this).contents().find('#intergramChat > div > input').html('Some text');
+        });
+        console.log(c);
+      });
+    }); 
   </script>
-  <!-- un-comment this code to enable service worker
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log('service worker installed'))
-        .catch(err => console.error('Error', err));
-    }
-  </script>-->
 
   <link href="build/main.css" rel="stylesheet">
 
 </head>
+
 <body>
 
   <!-- Ionic's root component and where the app will load -->
@@ -66,4 +65,5 @@
   <script src="build/main.js"></script>
 
 </body>
+
 </html>

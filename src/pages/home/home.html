@@ -1,41 +1,28 @@
 
-
-<script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<ion-content scroll="false" padding>
-    
-
-  <ion-grid>
-    <ion-row>
+<ion-content  padding>
+  <ion-grid class="fundo" >
+    <ion-row class="header">
       <ion-col>
-        <button ion-button round (click)="aparece()">Abre Chat</button>
-        <button ion-button round (click)="some()">Fecha Chat</button>
-		<!-- -->
-        <div class="container" style="padding-bottom:20px;">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-					<img src="../../assets/imgs/topo.jpg">				
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center box-produtos" style="background-image: url(../../assets/imgs/1.jpg);">
-					<div class="box-produtos-button">
-						<div class="box-produtos-comprar"></div>
-					</div>				
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center box-produtos" style="background-image: url(../../assets/imgs/2.jpg);">
-					<div class="box-produtos-button">
-						<div class="box-produtos-comprar"></div>
-					</div>				
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-					<img src="../../assets/imgs/rodape.jpg" alt="">
-				</div>
-			</div>
-		</div>
-		<!-- -->
+        <button fab fab-bottom fab-right  class="botao_telefone btn" (click)="abreChat()">Click Chamar</button>
+        <button fab fab-bottom fab-right  class="botao_end btn" (click)="abreChat()">Endereço</button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="setor">
+      <ion-col>
+        <button ion-button round block class="venda" (click)="aparece()">Venda</button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="setor">
+      <ion-col>
+        <button ion-button round block class="venda" (click)="aparece()">Venda</button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="footer">
+      <ion-col (click)="mercare()">
+        <br />
+        <br />
       </ion-col>
     </ion-row>
    
